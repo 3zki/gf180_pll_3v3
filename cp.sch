@@ -5,7 +5,6 @@ K {}
 V {}
 S {}
 E {}
-T {135fF} 2960 -360 0 0 0.4 0.4 {}
 T {Charge Pump} 1180 0 2 0 0.4 0.4 {}
 T {Ex. CS
 I=2uA} 150 -190 0 0 0.4 0.4 {}
@@ -657,6 +656,14 @@ N 1810 -510 2760 -510 {
 lab=IcpB}
 N 1810 -590 2760 -590 {
 lab=IcpS}
+N 2550 -500 2630 -500 {
+lab=#net18}
+N 2630 -500 2950 -500 {
+lab=#net18}
+N 2950 -360 2950 -340 {
+lab=VF}
+N 2950 -500 2950 -420 {
+lab=#net18}
 C {devices/iopin.sym} 230 -220 0 0 {name=p2 lab=IcpS}
 C {devices/iopin.sym} 90 -220 0 0 {name=p6 lab=IcpB}
 C {symbols/pfet_03v3.sym} 1550 -390 0 0 {name=M23
@@ -1258,7 +1265,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 3020 -420 0 0 {name=M43
 L=0.33u
-W=20u
+W=8u
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -1412,7 +1419,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 3020 -260 0 0 {name=M44
 L=0.33u
-W=10u
+W=4u
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -1480,9 +1487,13 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/cap_mim_2p0fF.sym} 2950 -290 0 0 {name=C1
-W=8e-6
-L=8e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
+C {devices/capa.sym} 2950 -290 0 0 {name=C1
+m=1
+value=240f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/capa.sym} 2950 -390 0 0 {name=C2
+m=1
+value=240f
+footprint=1206
+device="ceramic capacitor"}
