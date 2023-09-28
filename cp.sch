@@ -1489,11 +1489,11 @@ spiceprefix=X
 }
 C {devices/capa.sym} 2950 -290 0 0 {name=C1
 m=1
-value=240f
+value=280f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/capa.sym} 2950 -390 0 0 {name=C2
 m=1
-value=240f
+value=280f
 footprint=1206
 device="ceramic capacitor"}
