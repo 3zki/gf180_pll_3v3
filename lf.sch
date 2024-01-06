@@ -10,23 +10,27 @@ Loop Bandwidth: 320kHz
 Phase margin: 45deg} 0 -370 0 0 0.4 0.4 {}
 T {Experimental Loop Filter (3rd order)} 1180 0 2 0 0.4 0.4 {}
 N 40 -250 80 -250 {
-lab=in}
+lab=#net1}
 N 80 -190 80 -170 {
 lab=GND}
 N 80 -250 180 -250 {
-lab=in}
-N 180 -190 180 -170 {
 lab=#net1}
+N 180 -190 180 -170 {
+lab=#net2}
 N 180 -110 180 -90 {
 lab=GND}
 N 180 -250 240 -250 {
-lab=in}
+lab=#net1}
 N 340 -250 400 -250 {
 lab=out}
 N 300 -250 340 -250 {
 lab=out}
 N 340 -190 340 -170 {
 lab=GND}
+N 10 -250 30 -250 {
+lab=#net1}
+N 30 -250 40 -250 {
+lab=#net1}
 C {devices/res.sym} 180 -140 0 0 {name=R2
 value=451k
 footprint=1206
@@ -37,7 +41,7 @@ m=1
 value=242f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/ipin.sym} 40 -250 0 0 {name=p1 lab=in}
+C {devices/ipin.sym} 10 -250 0 0 {name=p1 lab=in}
 C {devices/gnd.sym} 80 -170 0 0 {name=l1 lab=GND}
 C {devices/capa.sym} 180 -220 0 0 {name=C2
 m=1

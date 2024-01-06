@@ -1,0 +1,23 @@
+v {xschem version=3.4.3 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -60 -20 -60 20 {}
+L 4 60 -20 60 20 {}
+L 4 -60 -20 60 -20 {}
+L 4 -60 20 60 20 {}
+L 7 60 10 80 10 {}
+L 7 60 -10 80 -10 {}
+B 5 77.5 7.5 82.5 12.5 {name=IcpS dir=inout}
+B 5 77.5 -12.5 82.5 -7.5 {name=IcpB dir=inout}
+T {CS} -11.5 -16 0 0 0.3 0.3 {}
+T {@name} 65 -32 0 0 0.2 0.2 {}
+T {IcpS} 55 6 0 1 0.2 0.2 {}
+T {IcpB} 55 -14 0 1 0.2 0.2 {}
+T {simulation only} -51.5 4 0 0 0.2 0.2 {}
