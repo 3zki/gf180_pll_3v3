@@ -94,7 +94,7 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 .include $::180MCU_STDCELLS/gf180mcu_fd_sc_mcu7t5v0.spice
 "}
-C {fdiv.sym} 1010 -240 0 0 {name=x6}
+C {fdiv2.sym} 1010 -240 0 0 {name=x6}
 C {cs-vth-ref.sym} -190 -30 0 0 {name=X15}
 C {devices/vdd.sym} -110 -210 0 0 {name=l7 lab=VDD}
 C {devices/gnd.sym} -110 -50 0 0 {name=l8 lab=GND}
