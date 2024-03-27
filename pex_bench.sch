@@ -113,6 +113,6 @@ value="
 "}
 C {devices/vdd.sym} -110 -210 0 0 {name=l7 lab=VDD}
 C {devices/gnd.sym} -110 -50 0 0 {name=l8 lab=GND}
-C {gf180_pll_3v3/cs-vth-ref.sym} -190 -30 0 0 {name=X9}
-C {gf180_pll_3v3/logic_layout.sym} 130 -240 0 0 {name=x6 GND=0 VDD=VDD prefix=logic_layout}
-C {gf180_pll_3v3/cp_layout.sym} 440 -250 0 0 {name=x1 GND=0 VDD=VDD prefix=cp_layout}
+C {cs-vth-ref.sym} -190 -30 0 0 {name=X9}
+C {logic_layout.sym} 130 -240 0 0 {name=x6 GND=0 VDD=VDD prefix=logic_layout}
+C {cp_layout.sym} 440 -250 0 0 {name=x1 GND=0 VDD=VDD prefix=cp_layout}
