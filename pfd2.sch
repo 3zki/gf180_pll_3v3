@@ -1,4 +1,4 @@
-v {xschem version=3.4.3 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -110,14 +110,8 @@ N 440 -300 440 -140 {
 lab=#net2}
 N 360 -140 440 -140 {
 lab=#net2}
-N 440 -600 440 -420 {
-lab=#net1}
-N 360 -600 440 -600 {
-lab=#net1}
 N 400 -380 440 -380 {
-lab=#net6}
-N 400 -520 400 -380 {
-lab=#net6}
+lab=#net1}
 N 400 -340 440 -340 {
 lab=#net4}
 N 400 -340 400 -220 {
@@ -154,19 +148,25 @@ N 210 -370 380 -370 {
 lab=#net5}
 N 200 -370 210 -370 {
 lab=#net5}
+N 440 -520 440 -420 {
+lab=#net6}
+N 400 -600 400 -380 {
+lab=#net1}
+N 360 -600 400 -600 {
+lab=#net1}
 C {devices/ipin.sym} 80 -140 0 0 {name=p1 lab=DATA}
 C {devices/ipin.sym} 80 -600 0 0 {name=p2 lab=CLK}
 C {devices/opin.sym} 880 -580 0 0 {name=p3 lab=UP}
 C {devices/opin.sym} 880 -160 0 0 {name=p4 lab=DOWN}
 C {nand2_1.sym} 280 -620 0 0 {name=x1 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {clkinv_1.sym} 160 -600 0 0 {name=x7 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {nand2_1.sym} 280 -520 0 0 {name=x2 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {nand2_1.sym} 280 -420 0 0 {name=x3 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {nand2_1.sym} 280 -520 2 1 {name=x2 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {nand2_1.sym} 280 -420 2 1 {name=x3 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {nand2_1.sym} 280 -320 0 0 {name=x4 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {nand2_1.sym} 280 -220 0 0 {name=x5 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {nand2_1.sym} 280 -120 0 0 {name=x6 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {nand2_1.sym} 280 -120 2 1 {name=x6 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {clkinv_1.sym} 160 -140 0 0 {name=x8 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {nand3_1.sym} 660 -580 0 0 {name=x13 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {nand3_1.sym} 660 -580 2 1 {name=x13 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {nand3_1.sym} 660 -160 0 0 {name=x14 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {nand4_1.sym} 500 -360 0 0 {name=x15 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {clkinv_1.sym} 420 -620 0 0 {name=x9 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }

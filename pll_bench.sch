@@ -1,4 +1,4 @@
-v {xschem version=3.4.3 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -54,13 +54,12 @@ N 350 -160 850 -160 {
 lab=#net6}
 N 350 -140 850 -140 {
 lab=#net7}
-C {cp.sym} 330 -250 0 0 {name=x9}
 C {devices/code_shown.sym} 40 -550 0 0 {name=NGSPICE only_toplevel=true
 value="
-vpwr VDD 0 pulse(0 3.6 4n 1p 1p 200u 200u) dc 0
-vext clk 0 pulse(0 3.6 4n 40p 40p 62.5n 125n) dc 0
-* .option temp=-40
-* .option tnom=-40
+vpwr VDD 0 pulse(0 3.0 4n 1p 1p 200u 200u) dc 0
+vext clk 0 pulse(0 3.0 4n 40p 40p 62.5n 125n) dc 0
+.option temp=125
+.option tnom=125
 .control
 save all
 tran  0.05n 25u
@@ -86,17 +85,17 @@ C {devices/code_shown.sym} 560 -550 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib $::180MCU_MODELS/sm141064.ngspice ss
 .lib $::180MCU_MODELS/sm141064.ngspice cap_mim
-.lib $::180MCU_MODELS/sm141064.ngspice bjt_typical
-.lib $::180MCU_MODELS/sm141064.ngspice res_typical
-.lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
-.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+.lib $::180MCU_MODELS/sm141064.ngspice bjt_ss
+.lib $::180MCU_MODELS/sm141064.ngspice res_ss
+.lib $::180MCU_MODELS/sm141064.ngspice moscap_ss
+.lib $::180MCU_MODELS/sm141064.ngspice mimcap_ss
 .include $::180MCU_STDCELLS/gf180mcu_fd_sc_mcu7t5v0.spice
 "}
 C {fdiv2.sym} 1010 -240 0 0 {name=x6}
-C {cs-vth-ref.sym} -190 -30 0 0 {name=X15}
 C {devices/vdd.sym} -110 -210 0 0 {name=l7 lab=VDD}
 C {devices/gnd.sym} -110 -50 0 0 {name=l8 lab=GND}
 C {gf180_pll_3v3/cp.sym} 330 -250 0 0 {name=x2}
 C {csbias.sym} 150 -170 0 0 {name=x8}
+C {gf180_pll_3v3/cs-vth-ref.sym} -190 -30 0 0 {name=X9}

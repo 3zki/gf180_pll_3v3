@@ -1,4 +1,4 @@
-v {xschem version=3.4.3 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -6,14 +6,12 @@ V {}
 S {}
 E {}
 T {Clock divider by 6} 1180 0 2 0 0.4 0.4 {}
-N 80 -180 100 -180 {
+N 80 -200 100 -200 {
 lab=clk}
-N 60 -180 80 -180 {
+N 60 -200 80 -200 {
 lab=clk}
 N 920 -220 940 -220 {
 lab=out}
-N 260 -180 340 -180 {
-lab=#net1}
 N 340 -200 340 -180 {
 lab=#net1}
 N 340 -180 540 -180 {
@@ -36,12 +34,18 @@ N 340 -280 590 -280 {
 lab=#net4}
 N 340 -280 340 -220 {
 lab=#net4}
-N 280 -180 280 -140 {
+N 260 -140 280 -140 {
+lab=6f}
+N 180 -200 340 -200 {
 lab=#net1}
-C {devices/ipin.sym} 60 -180 0 0 {name=p1 lab=clk}
+N 180 -200 180 -180 {
+lab=#net1}
+N 180 -180 180 -140 {
+lab=#net1}
+C {devices/ipin.sym} 60 -200 0 0 {name=p1 lab=clk}
 C {devices/opin.sym} 940 -220 0 0 {name=p3 lab=out}
-C {clkbuf_3.sym} 140 -180 0 0 {name=x10 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {clkbuf_8.sym} 220 -180 0 0 {name=x11 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {clkbuf_3.sym} 140 -200 0 0 {name=x10 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {clkbuf_8.sym} 220 -140 0 0 {name=x11 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {devices/opin.sym} 280 -140 0 0 {name=p5 lab=6f}
 C {dffq_1.sym} 430 -210 0 0 {name=x1 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {dffq_1.sym} 630 -210 0 0 {name=x2 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }

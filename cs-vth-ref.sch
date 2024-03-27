@@ -1,4 +1,4 @@
-v {xschem version=3.4.3 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -45,14 +45,12 @@ N 190 -580 240 -580 {
 lab=vb}
 N 190 -620 190 -580 {
 lab=vb}
-N 110 -370 120 -370 {
-lab=vss}
 N 240 -430 240 -360 {
-lab=#net3}
+lab=vss}
 N 120 -460 200 -460 {
 lab=#net1}
 N 160 -410 240 -410 {
-lab=#net3}
+lab=vss}
 N 240 -510 240 -490 {
 lab=vb}
 N 120 -510 120 -440 {
@@ -60,13 +58,13 @@ lab=#net1}
 N 210 -250 220 -250 {
 lab=vss}
 N 240 -300 240 -280 {
-lab=#net4}
+lab=#net3}
 N 210 -330 220 -330 {
 lab=vss}
 N 210 -330 210 -250 {
 lab=vss}
 N 240 -140 240 -120 {
-lab=#net5}
+lab=#net4}
 N 240 -60 240 -40 {
 lab=vss}
 N 120 -380 120 -40 {
@@ -78,17 +76,22 @@ lab=vss}
 N 210 -250 210 -40 {
 lab=vss}
 N 240 -460 250 -460 {
-lab=#net3}
+lab=vss}
 N 250 -460 250 -420 {
-lab=#net3}
-N 240 -420 250 -420 {
-lab=#net3}
+lab=vss}
 N 240 -580 340 -580 {
 lab=vb}
 N 240 -570 240 -510 {
 lab=vb}
 N 120 -570 120 -510 {
 lab=#net1}
+N 110 -370 110 -40 {
+lab=vss}
+N 110 -40 120 -40 {
+lab=vss}
+N 240 -40 250 -40 {
+lab=vss}
+N 250 -420 250 -40 {}
 C {symbols/nfet_03v3.sym} 140 -410 0 1 {name=M1
 L=0.56u
 W=11.2u

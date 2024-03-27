@@ -174,12 +174,9 @@ N 510 -280 510 -270 {
 lab=VCNS}
 N 380 -440 380 -380 {
 lab=csvb}
-N 300 -150 320 -150 {
-lab=GND}
 N 320 -120 320 -80 {
 lab=GND}
-N 360 -170 360 -150 {
-lab=VCNB}
+N 320 -180 320 -120 {}
 C {devices/vdd.sym} 380 -470 0 0 {name=l2 lab=VDD}
 C {symbols/pfet_03v3.sym} 340 -440 0 1 {name=M1
 L=0.56u
@@ -239,7 +236,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 340 -210 0 1 {name=M6
 L=0.33u
-W=0.8u
+W=0.4u
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -356,17 +353,3 @@ C {devices/opin.sym} 820 -170 0 0 {name=p3 lab=VCNB}
 C {devices/opin.sym} 820 -90 0 0 {name=p4 lab=VCNS}
 C {devices/ipin.sym} 180 -380 0 0 {name=p5 lab=csvb}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Mizuki Mori"}
-C {symbols/nfet_03v3.sym} 340 -150 0 1 {name=M11
-L=0.33u
-W=0.8u
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_03v3
-spiceprefix=X
-}

@@ -1,0 +1,41 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @@CSVB @@UP @@DOWN @@VCNB @@VCNS @@OUT @GND @VDD @prefix"
+template="name=x1 GND=0 VDD=VDD prefix=cp_layout"
+extra="GND VDD prefix"
+highlight=true
+}
+V {}
+S {}
+E {}
+L 4 20 40 40 40 {}
+L 4 -80 -10 -60 -10 {}
+L 4 -80 10 -60 10 {}
+L 4 60 -10 80 -10 {}
+L 4 -60 -20 60 -20 {}
+L 4 -60 20 60 20 {}
+L 4 -60 -20 -60 20 {}
+L 4 60 -20 60 20 {}
+L 4 40 20 40 40 {}
+L 4 40 70 40 90 {}
+L 4 40 90 60 90 {}
+L 4 40 90 40 110 {}
+L 4 40 110 60 110 {}
+L 4 40 40 40 70 {}
+B 5 17.5 37.5 22.5 42.5 {name=CSVB dir=inout}
+B 5 -82.5 -12.5 -77.5 -7.5 {name=UP dir=in }
+B 5 -82.5 7.5 -77.5 12.5 {name=DOWN dir=in }
+B 5 77.5 -12.5 82.5 -7.5 {name=OUT dir=out }
+B 5 57.5 87.5 62.5 92.5 {name=VCNB dir=inout}
+B 5 57.5 107.5 62.5 112.5 {name=VCNS dir=inout}
+T {CSVB} 45 36 0 0 0.2 0.2 {}
+T {CP
+PEX} -7 -16 0 0 0.3 0.3 {}
+T {@name} 65 -32 0 0 0.2 0.2 {}
+T {UP} -55 -14 0 0 0.2 0.2 {}
+T {DOWN} -55 6 0 0 0.2 0.2 {}
+T {OUT} 55 -14 0 1 0.2 0.2 {}
+T {VCNB} 35 86 0 1 0.2 0.2 {}
+T {VCNS} 35 106 0 1 0.2 0.2 {}

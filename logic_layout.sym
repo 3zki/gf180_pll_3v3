@@ -1,0 +1,34 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @@F6 @@DOWN @@UP @GND @VDD @@VCOIN @@CLK @prefix"
+template="name=x1 GND=0 VDD=VDD prefix=logic_layout"
+extra="GND VDD prefix"
+highlight=true
+}
+V {}
+S {}
+E {}
+L 4 -80 -30 -80 30 {}
+L 4 80 -30 80 30 {}
+L 4 -100 0 -80 0 {}
+L 4 80 -20 100 -20 {}
+L 4 80 0 100 0 {}
+L 4 -100 -20 -80 -20 {}
+L 4 80 20 100 20 {}
+L 4 -80 -30 80 -30 {}
+L 4 -80 30 80 30 {}
+B 5 -102.5 -2.5 -97.5 2.5 {name=CLK dir=in}
+B 5 97.5 -22.5 102.5 -17.5 {name=UP dir=out}
+B 5 97.5 -2.5 102.5 2.5 {name=DOWN dir=out}
+B 5 -102.5 -22.5 -97.5 -17.5 {name=VCOIN dir=in}
+B 5 97.5 17.5 102.5 22.5 {name=F6 dir=out}
+T {LOGIC
+PEX} -22 -16 0 0 0.3 0.3 {}
+T {@name} 85 -42 0 0 0.2 0.2 {}
+T {CLK} -75 -4 0 0 0.2 0.2 {}
+T {UP} 75 -24 0 1 0.2 0.2 {}
+T {DOWN} 75 -4 0 1 0.2 0.2 {}
+T {VCOIN} -75 -24 0 0 0.2 0.2 {}
+T {F6} 75 16 0 1 0.2 0.2 {}
