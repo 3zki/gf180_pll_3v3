@@ -6,7 +6,7 @@ Analog PLL testbench
 * VDD : 3.3V
 
 # Files
-* pll_bench - PLL and its benchmark
+* pll_bench - PLL and its testbench
 * pfd, pfd2 - PFD 
 * cp - Charge pump
 * lf, lf2 - Loop filter
@@ -18,7 +18,7 @@ Analog PLL testbench
 * sw - Output switch
 
 # Files - Layout and PEX
-* pex_bench - PEX benchmark
+* pex_bench - PEX testbench
 * logic_layout - Logic (PFD and clock divider) layout, LVS schematic, symbol for PEX netlist
 * logic_pex - PEX (RC extracted) netlist 
 * cp_layout - Charge pump layout, LVS schematic, symbol for PEX netlist
