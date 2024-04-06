@@ -1,0 +1,36 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @@DEBUG @VDD @@PLL_FREERUN @VSS @@PLL_CLK_OUT @@PLL_DISABLE @@PLL_REF_CLK @@PLL_VCTRL @prefix"
+template="name=x1 VDD=VDD VSS=0 prefix=TOP"
+extra="VDD VSS prefix"
+highlight=true
+}
+V {}
+S {}
+E {}
+L 4 -80 10 -60 10 {}
+L 4 60 0 80 0 {}
+L 4 -80 -10 -60 -10 {}
+L 4 -80 30 -60 30 {}
+L 4 -60 -40 -60 40 {}
+L 4 60 -40 60 40 {}
+L 4 -60 -40 60 -40 {}
+L 4 -60 40 60 40 {}
+L 4 -80 -50 -60 -50 {}
+L 4 -80 -30 -60 -30 {}
+L 4 -60 -50 -60 -40 {}
+B 5 -82.5 7.5 -77.5 12.5 {name=PLL_DISABLE dir=in}
+B 5 77.5 -2.5 82.5 2.5 {name=PLL_CLK_OUT dir=out}
+B 5 -82.5 -12.5 -77.5 -7.5 {name=PLL_REF_CLK dir=in}
+B 5 -82.5 27.5 -77.5 32.5 {name=PLL_VCTRL dir=inout}
+B 5 -82.5 -52.5 -77.5 -47.5 {name=DEBUG dir=inout}
+B 5 -82.5 -32.5 -77.5 -27.5 {name=PLL_FREERUN dir=in}
+T {@name} 35 -62 0 0 0.2 0.2 {}
+T {PLL_DISABLE} -55 6 0 0 0.2 0.2 {}
+T {PLL_CLK_OUT} 55 -4 0 1 0.2 0.2 {}
+T {PLL_REF_CLK} -55 -14 0 0 0.2 0.2 {}
+T {PLL_VCTRL} -55 26 0 0 0.2 0.2 {}
+T {DEBUG} -55 -54 0 0 0.2 0.2 {}
+T {PLL_FREERUN} -55 -34 0 0 0.2 0.2 {}
