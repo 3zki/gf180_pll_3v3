@@ -1,0 +1,49 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @@UP @@DOWN @@VCTRL @@CLK @VDD @@FREERUN @@F6 @VSS @@OUT @@LF @@CSVB @@EX @prefix"
+template="name=x1 VSS=0 VDD=VDD prefix=TOP"
+extra="VSS VDD prefix"
+highlight=true
+}
+V {}
+S {}
+E {}
+L 4 -80 0 -60 0 {}
+L 4 60 -30 80 -30 {}
+L 4 -80 -30 -60 -30 {}
+L 4 0 40 0 60 {}
+L 4 60 20 80 20 {}
+L 4 -80 30 -60 30 {}
+L 4 -60 -40 -60 40 {}
+L 4 60 -40 60 40 {}
+L 4 -60 -40 60 -40 {}
+L 4 -60 40 60 40 {}
+L 4 -80 -70 -60 -70 {}
+L 4 -80 -90 -60 -90 {}
+L 4 -80 -50 -60 -50 {}
+L 4 -60 -90 -60 -40 {}
+L 4 -60 40 -60 60 {}
+L 4 -80 60 -60 60 {}
+B 5 -82.5 -2.5 -77.5 2.5 {name=CLK dir=in}
+B 5 77.5 -32.5 82.5 -27.5 {name=OUT dir=out}
+B 5 -82.5 -32.5 -77.5 -27.5 {name=LF dir=inout}
+B 5 -2.5 57.5 2.5 62.5 {name=FREERUN dir=in}
+B 5 77.5 17.5 82.5 22.5 {name=F6 dir=out}
+B 5 -82.5 27.5 -77.5 32.5 {name=EX dir=in}
+B 5 -82.5 -72.5 -77.5 -67.5 {name=DOWN dir=inout}
+B 5 -82.5 -92.5 -77.5 -87.5 {name=VCTRL dir=inout}
+B 5 -82.5 -52.5 -77.5 -47.5 {name=UP dir=inout}
+B 5 -82.5 57.5 -77.5 62.5 {name=CSVB dir=in}
+T {@name} 35 -62 0 0 0.2 0.2 {}
+T {CLK} -55 -4 0 0 0.2 0.2 {}
+T {OUT} 55 -34 0 1 0.2 0.2 {}
+T {LF} -55 -34 0 0 0.2 0.2 {}
+T {FREERUN} -25 26 0 0 0.2 0.2 {}
+T {F6} 55 16 0 1 0.2 0.2 {}
+T {EX} -55 26 0 0 0.2 0.2 {}
+T {DOWN} -55 -74 0 0 0.2 0.2 {}
+T {VCTRL} -55 -94 0 0 0.2 0.2 {}
+T {UP} -55 -54 0 0 0.2 0.2 {}
+T {CSVB} -55 56 0 0 0.2 0.2 {}
