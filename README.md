@@ -22,9 +22,12 @@ Analog PLL testbench
 * pll_layout_pex - RC extracted netlist
 * pex_bench - PEX testbench (ss,ff,tt=typical)
 
-# gf180_pll_3v3/pex_io - PEX-PLL and IO cells simulation
+## gf180_pll_3v3/pex_io - PEX-PLL and IO cells simulation
 * pex_bench - PEX testbench with IO cells (tt=typical)
 
 # gf180_pll_3v3/shipped - Final version of PLL layout
-* coming soon...
- 
+* pll_sw - PLL and Output switch (full layout) 
+
+## gf180_pll_3v3/shipped_pex_io - PEX-PLL and IO cells simulation 
+* TOP_layout_pex - RC extracted netlist
+* pex_bench - PEX testbench (tt=typical)
