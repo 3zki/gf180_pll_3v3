@@ -1,4 +1,4 @@
-# gf180_pll
+# gf180_pll_3v3
 Analog PLL testbench
 
 * input : 8MHz
